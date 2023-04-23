@@ -9,16 +9,6 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
 
   -- change trouble config
   {
@@ -142,7 +132,6 @@ return {
     opts = {
       ensure_installed = {
         "bash",
-        "help",
         "html",
         "javascript",
         "json",
@@ -174,7 +163,7 @@ return {
     end,
   },
 
-  -- the opts function can also be used to change the de opts:
+  -- the opts function can also be used to change the default opts:
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
