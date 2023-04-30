@@ -6,3 +6,9 @@ local opt = vim.opt
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.autowrite = true -- Enable auto write
 opt.winbar = "%=%m %f" -- Buffer location
+
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.smartindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
